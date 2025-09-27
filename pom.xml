@@ -1,81 +1,61 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-<<<<<<< f6dac44726fb039a768617103e93594763b807c3
-		<version>3.5.0</version>
-		<relativePath/> <!-- lookup parent from repository -->
-	</parent>
-	<groupId>com.discovery-server</groupId>
-	<artifactId>discovery-server</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>discovery-server</name>
-	<description>Demo project for Spring Boot</description>
-=======
 		<version>3.5.3</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/>
 	</parent>
+
 	<groupId>com.validation</groupId>
 	<artifactId>validation-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>validation-service</name>
 	<description>Demo project for validation-service</description>
->>>>>>> intial commit
-	<url/>
-	<licenses>
-		<license/>
-	</licenses>
-	<developers>
-		<developer/>
-	</developers>
-	<scm>
-		<connection/>
-		<developerConnection/>
-		<tag/>
-		<url/>
-	</scm>
+
 	<properties>
 		<java.version>17</java.version>
 		<spring-cloud.version>2025.0.0</spring-cloud.version>
 	</properties>
+
 	<dependencies>
+		<!-- Spring Boot Web -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-<<<<<<< f6dac44726fb039a768617103e93594763b807c3
-			<artifactId>spring-boot-starter-actuator</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
-		</dependency>
-
-=======
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+
+		<!-- Eureka Client -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
+
+		<!-- OpenAPI / Swagger -->
 		<dependency>
 			<groupId>org.springdoc</groupId>
 			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
-			<version>2.5.0</version> <!-- Latest as of July 2025 -->
+			<version>2.5.0</version>
 		</dependency>
+
+		<!-- Lombok -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
->>>>>>> intial commit
+
+		<!-- Test -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -85,20 +65,12 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
-<<<<<<< f6dac44726fb039a768617103e93594763b807c3
-=======
-
->>>>>>> intial commit
 		</dependencies>
 	</dependencyManagement>
 
 	<build>
 		<plugins>
 			<plugin>
-<<<<<<< f6dac44726fb039a768617103e93594763b807c3
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-=======
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
@@ -113,15 +85,6 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-					<excludes>
-						<exclude>
-							<groupId>org.projectlombok</groupId>
-							<artifactId>lombok</artifactId>
-						</exclude>
-					</excludes>
-				</configuration>
->>>>>>> intial commit
 			</plugin>
 		</plugins>
 	</build>
