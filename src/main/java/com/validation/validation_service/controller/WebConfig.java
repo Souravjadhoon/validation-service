@@ -18,7 +18,7 @@ public class WebConfig {
                         .allowedOrigins("*") // allow all origins
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*");
-            }//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
+            }//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
         };
     }
 }
